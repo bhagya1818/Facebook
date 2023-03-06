@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PolicySuite" thread-count="2" parallel = "tests">
+  <test  name="Chrome">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="testNgPkg.NewPolicyTestNgClass"/>
+      <class name="testNgPkg.LoginTestNgClass"/>
+     
+    </classes>
+  </test> <!-- PolicyTest -->
+  
+  <test name="Firefox">
+  <parameter name="browser" value="Firefox"></parameter>
+    <classes>
+      <class name="testNgPkg.NewPolicyTestNgClass"/>
+       <class name="testNgPkg.LoginTestNgClass"/>
+    </classes>
+  </test> <!-- PolicyTest -->
+  
+  
+</suite> <!-- PolicySuite -->
